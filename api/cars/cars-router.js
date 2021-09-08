@@ -2,8 +2,10 @@
 const express = require('express')
 const Car = require('./cars-model')
 const {
-    checkCarId, checkCarPayload, checkVinNumberValid, checkVinNumberUnique,
-
+    checkCarId, 
+    checkCarPayload, 
+    checkVinNumberValid, 
+    checkVinNumberUnique,
 } = require('./cars-middleware')
 const router = express.Router()
 
@@ -16,7 +18,7 @@ router.get('/', async (req, res, next) => {
     }
 })
 
-router.get('/:id', checkCarId, async (req, res, next) => {
+router.get('/:id', checkCarId, async (req, res, next) => { // eslint-disable-line
     res.json(req.car)
 })
 
