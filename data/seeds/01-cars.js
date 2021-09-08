@@ -10,8 +10,8 @@ const cars = [
     },
     {
         vin: '2345678912345',
-        make: 'toyota',
-        model: 'corolla',
+        make: 'ford',
+        model: 'mustang',
         mileage: 69890,
         title: 'dirty',
         transmission: 'automatic',
